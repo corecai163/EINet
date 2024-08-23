@@ -1,0 +1,3 @@
+#torchrun --standalone --nproc_per_node=2 test.py --ckpts experiments/EINet/ShapeNet34_models/ckpt-best.pth --config ./cfgs/ShapeNet34_models/EINet.yaml --mode median --test_interval 50 --exp_name test_ckpt
+#torchrun --standalone --nproc_per_node=2 test.py --ckpts experiments/EINet/ShapeNet55_models/ckpt-best.pth --config ./cfgs/ShapeNet55_models/EINet.yaml --mode median --test_interval 50 --exp_name test_EINet
+torchrun --standalone --nproc_per_node=2 test.py --ckpts experiments/EINet/PCN_models/ckpt-best.pth --sync_bn --config ./cfgs/PCN_models/EINet.yaml --test_interval 200 --exp_name test_EINet

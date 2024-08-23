@@ -1,0 +1,10 @@
+# ninja log v5
+1	21590	1698956570573254480	/raid/zhangcanyu/Completion/EINet/extensions/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-38/pointnet2_ops/_ext-src/src/bindings.o	8876e5bdedd2c416
+0	22572	1698956571557250458	/raid/zhangcanyu/Completion/EINet/extensions/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-38/pointnet2_ops/_ext-src/src/ball_query.o	e6589a37442f2d64
+2	22842	1698956571829249346	/raid/zhangcanyu/Completion/EINet/extensions/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-38/pointnet2_ops/_ext-src/src/interpolate.o	24c5d437a5fc06a1
+1	23062	1698956572049248446	/raid/zhangcanyu/Completion/EINet/extensions/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-38/pointnet2_ops/_ext-src/src/group_points.o	8c7a00ca4b0c84c0
+2	23091	1698956572081248316	/raid/zhangcanyu/Completion/EINet/extensions/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-38/pointnet2_ops/_ext-src/src/sampling.o	e770db3d0ec50b83
+2	64919	1698956613905077582	/raid/zhangcanyu/Completion/EINet/extensions/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-38/pointnet2_ops/_ext-src/src/interpolate_gpu.o	571dee0c6be24094
+0	64958	1698956613945077420	/raid/zhangcanyu/Completion/EINet/extensions/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-38/pointnet2_ops/_ext-src/src/ball_query_gpu.o	69cd93d69a3c8661
+1	65074	1698956614061076947	/raid/zhangcanyu/Completion/EINet/extensions/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-38/pointnet2_ops/_ext-src/src/group_points_gpu.o	46b91127901648d9
+3	68910	1698956617897061311	/raid/zhangcanyu/Completion/EINet/extensions/pointnet2_ops_lib/build/temp.linux-x86_64-cpython-38/pointnet2_ops/_ext-src/src/sampling_gpu.o	fdb435fdeef5846a

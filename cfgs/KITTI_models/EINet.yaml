@@ -1,0 +1,45 @@
+optimizer : {
+  type: AdamW,
+  kwargs: {
+  lr : 0.00008,
+  weight_decay : 0.005
+}}
+
+scheduler: {
+  type: LambdaLR,
+  kwargs: {
+  decay_step: 100,
+  lr_decay: 0.2,
+  lowest_decay: 0.02  # min lr = lowest_decay * lr
+}}
+
+bnmscheduler: {
+  type: Lambda,
+  kwargs: {
+  decay_step: 21,
+  bn_decay: 0.5,
+  bn_momentum: 0.9,
+  lowest_decay: 0.01
+}}
+
+dataset : {
+  train : { _base_: cfgs/dataset_configs/PCNCars.yaml, 
+            others: {subset: 'train'}},
+  val : { _base_: cfgs/dataset_configs/PCNCars.yaml, 
+            others: {subset: 'test'}},
+  test : { _base_: cfgs/dataset_configs/KITTI.yaml, 
+            others: {subset: 'test'}}}
+model : {
+  NAME: EINet, num_pred: 16384, num_seeds: 512, dim_feat: 512, upscales: [1,2,8], scales: [0.4,0.3,0.2]}
+
+loss : {
+  sparse_loss_weight: 1.0,
+  dense_loss_weight: 1.0,
+  dz_weight: 1.0,
+  orth_weight: 1.0,
+}
+total_bs : 16
+step_per_update : 1
+max_epoch : 200
+
+consider_metric: CDL1
