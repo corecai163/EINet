@@ -16,7 +16,7 @@ Please Check PoinTr (https://github.com/yuxumin/PoinTr/tree/master)
 
 # Pretrained Models
 
-[[Google Drive]()]
+[[Google Drive](https://drive.google.com/file/d/1S5WQVbWPjr7ip7pu0uugrO82ZT_f2WDL/view?usp=sharing)]
 
 # Training/Testing
 Please review the bash files (e.g., train.sh) and adjust the batch size and learning rates in the configuration (cfgs) files according to the number of GPUs in your system.
